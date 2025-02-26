@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+    --cormaior: #ffd700;
+    --cormenor: #dc145d;
+    --cordedestaque:#02da02;
+    --txtprincipal:#ffff58;
+    --txtsecundario: #ffc0cb;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top, #0c008e, #b3004d);
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  /* background-image: url("belas_aguas.png ");  */
+  background-image: linear-gradient(to top left,var(--cormaior), var(--cormenor));
+  background-position: top;
+  background-repeat: no-repeat;
+}
+h1{
+color: #9500f8;
+}
+

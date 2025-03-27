@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* device breakpoints 
+mobile 600 px 
+tablet 768 px
+desktop 992 px
+smart_tv 1200 px
+*/
+
+:root {
+  --corprimaria: #e7771b;
+  --corsecundaria: #f2e6d4;
+  --cordestaque: #087b8f;
+  --cortexto1: #000064e5;
+  --cortexto2: #004500;
+  --corextra: #ffff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+   background-image: linear-gradient( 
+    to bottom,
+    var(--corprimaria),
+    var(--cordestaque) 
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: var(--cordestaque);
+  margin-top: 3px;
+  width: 90vw;
+  margin: auto;
+}
+
+header > h1 {
+  text-align: center;
+  color: var(--corextra);
+
+}
+menu {
+  background-color: var(--cordestaque);
+  margin-top: 3px;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+menu > ul > li {
+  display: inline-flex;
+}
+
+menu > ul > li > a {
+  color: var(--corprimaria);
+  text-decoration: none;
+}
+menu > ul > li > a:hover{
+  color: var(--cortexto2);
+}
+section {
+  text-align: center;
+  background-color: var(--corsecundaria);
+}
+article>h2 {
+  text-align: left;
+  padding-bottom: 10px;
+  color: var(--cortexto2);
+}
+article>p {
+  text-align: justify;
+  padding-bottom: 17px;
+  text-indent: 17px;
+  
+  color: var(--cortexto1);
+}
+
+footer {
+  padding-top: 10px;
+  background-color: var(--corsecundaria);
+  text-align: center;
+  color: var();
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+img#mobile {
+  display: block;
+}
+
+img#tablet {
+  display: none;
+}
+
+img#print {
+  display: none;
+}
+
+img#pc {
+  display: none;
+}
+
+img#tv {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+      background-image:url("../back-tablet.jpg");
+
+  }}
+
+img#mobile {
+  display: none;
+}
+
+img#tablet {
+  display: block;
+}
+
+img#print {
+  display: none;
+}
+
+img#pc {
+  display: none;
+}
+
+img#tv {
+  display: none;
+}
+
